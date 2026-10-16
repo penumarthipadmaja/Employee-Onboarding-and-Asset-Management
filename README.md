@@ -1,70 +1,49 @@
 # Employee Onboarding and Asset Management
 
-## 1. Project Overview
-This project is developed using ServiceNow to automate employee onboarding, onboarding task tracking, asset assignment, and asset return processes.
 
-## 2. Objectives
-- Automate onboarding record creation.
-- Track employee onboarding tasks.
-- Automate asset assignment.
-- Update onboarding status when all required tasks are completed.
-- Manage asset return status.
+## Project Overview
+This project is a ServiceNow application developed to automate employee onboarding activities and IT asset management. It helps manage employee records, onboarding tasks, asset assignments, and asset returns using automation.
 
-## 3. Technologies Used
+## Objectives
+- Automate employee onboarding record creation.
+- Manage onboarding tasks and their completion status.
+- Track IT asset assignments and returns.
+- Automatically update onboarding status when all required tasks are completed.
+
+## Technologies Used
 - ServiceNow Studio
 - Flow Designer
 - Business Rules
 - JavaScript
-- GlideRecord API
-- GitHub
+- GlideRecord
 
-## 4. Tables Created
-1. Employee
-2. Asset
-3. Onboarding
-4. Onboarding Task
+## Tables Created
+1. **Employee** – Stores employee details and onboarding status.
+2. **Asset** – Stores asset information, assignment details, and return status.
+3. **Onboarding** – Tracks onboarding progress and overall status.
+4. **Onboarding Task** – Manages individual onboarding tasks and their completion.
 
-## 5. Onboarding Tasks
-The project tracks four onboarding tasks:
-- HR Verification
-- IT Setup
-- Asset Assignment
-- Employee Orientation
+## Key Features
+- Automatically creates onboarding and asset records through Flow Designer.
+- Creates and manages onboarding tasks.
+- Updates task status when the Work Completed checkbox is selected.
+- Automatically updates onboarding status to Completed when all four onboarding tasks are completed.
+- Updates asset status when an asset is assigned or returned.
 
-## 6. Automation
-### Employee Onboarding Automation
-Creates the related onboarding record when a new employee record is created.
+## Onboarding Tasks
+The application manages the following four tasks:
+1. HR Verification
+2. IT Setup
+3. Asset Assignment
+4. Employee Orientation
 
-### Asset Automation
-Creates and assigns an asset through the configured automation.
+## Testing
+The application was tested by creating employee records, verifying automatic onboarding and asset record creation, completing all four onboarding tasks, and checking the resulting onboarding and asset statuses.
 
-### Onboarding Task Automation
-Creates and tracks onboarding tasks for the employee.
+## Screenshots
+Screenshots of the application, onboarding records, task records, and asset automation are included in this repository.
 
-### Task Completion Business Rule
-Updates a task's status when its Work Completed checkbox is selected.
+## Conclusion
 
-### Onboarding Completion Business Rule
-When all four related tasks are completed, updates the HR Verification, IT Setup, Asset Assignment, and overall Status fields in the Onboarding table.
-
-### Asset Return Automation
-Updates the asset status to Returned when the return process is completed.
-
-## 7. Testing
-The following scenarios have been tested:
-- Employee record creation
-- Automatic onboarding record creation
-- Asset record creation and assignment
-- Creation of all four onboarding tasks
-- Automatic onboarding field and status updates
-- Asset return status update
-
-## 8. Project Screenshots
-Screenshots demonstrating the tables, automation, and successful test results will be added here.
-
-## 9. Project Status
-Core project development and automation testing are complete. Final screenshots, documentation, and demo preparation are in progress.
-
-## 10. Conclusion
-This project demonstrates how ServiceNow Flow Designer, Business Rules, and GlideRecord can be used to automate employee onboarding and asset management workflows.
+The Employee Onboarding and Asset Management project demonstrates how ServiceNow can be used to simplify and automate employee onboarding processes and IT asset management. By implementing Flow Designer and Business Rules, the application automates record creation, manages onboarding tasks, updates onboarding status when all required tasks are completed, and tracks asset assignments and returns. This project provided practical experience in ServiceNow application development, workflow automation, table relationships, and server-side scripting.
 
