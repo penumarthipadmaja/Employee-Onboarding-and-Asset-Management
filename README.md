@@ -41,6 +41,7 @@ The application manages the following four tasks:
 The application was tested by creating employee records, verifying automatic onboarding and asset record creation, completing all four onboarding tasks, and checking the resulting onboarding and asset statuses.
 
 
+
 ## Conclusion
 The Employee Onboarding and Asset Management project demonstrates how ServiceNow can be used to simplify and automate employee onboarding processes and IT asset management. By implementing Flow Designer and Business Rules, the application automates record creation, manages onboarding tasks, updates onboarding status when all required tasks are completed, and tracks asset assignments and returns. This project provided practical experience in ServiceNow application development, workflow automation, table relationships, and server-side scripting.
 
